@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharjeel Jalil Albasit</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#0E0E10;
+  --bg-card:rgba(255,255,255,0.025);
+  --bg-card-h:rgba(255,255,255,0.05);
+  --border:rgba(255,255,255,0.055);
+  --border-h:rgba(255,255,255,0.11);
+  --t1:rgba(255,255,255,0.90);
+  --t2:rgba(255,255,255,0.52);
+  --t3:rgba(255,255,255,0.28);
+  --accent:#818CF8;
+  --r:12px;
+  --pill:980px;
+  --ease:0.22s ease;
+  --serif:'Newsreader',Georgia,serif;
+  --sans:'DM Sans',-apple-system,sans-serif;
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--t1);font-family:var(--sans);font-size:14.5px;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(129,140,248,0.18)}
+a{color:inherit;text-decoration:none;transition:color var(--ease),opacity var(--ease)}
+.w{max-width:840px;margin:0 auto;padding:0 28px}
+
+/* Hero */
+.hero{padding:clamp(80px,12vw,130px) 0 clamp(60px,8vw,90px);text-align:center;opacity:0;animation:up .6s ease .05s forwards}
+.hero h1{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,3rem);font-weight:500;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.hero .intro{font-size:clamp(.95rem,1.8vw,1.05rem);font-weight:300;color:var(--t2);max-width:480px;margin:0 auto 40px;line-height:1.7}
+.hero-nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.hero-nav a{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:var(--pill);font-size:13px;font-weight:500;transition:all var(--ease)}
+.hero-nav svg{width:14px;height:14px;flex-shrink:0}
+.nf{background:var(--accent);color:#fff}.nf:hover{background:#6E7BE0;opacity:1}
+.ng{color:var(--t2);border:1px solid var(--border)}.ng:hover{border-color:var(--border-h);color:var(--t1);opacity:1}
+
+/* Sections */
+.s{padding:clamp(56px,8vw,80px) 0;border-top:1px solid var(--border);opacity:0;animation:up .55s ease forwards}
+.s:nth-of-type(1){animation-delay:.1s}.s:nth-of-type(2){animation-delay:.14s}.s:nth-of-type(3){animation-delay:.18s}.s:nth-of-type(4){animation-delay:.22s}
+.s-label{font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.13em;color:var(--t3);margin-bottom:clamp(32px,5vw,48px)}
+
+/* Projects */
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pc{display:flex;flex-direction:column;padding:22px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);transition:background var(--ease),border-color var(--ease),box-shadow .3s ease,transform .3s ease;cursor:pointer}
+.pc:hover{background:var(--bg-card-h);border-color:var(--border-h);box-shadow:0 6px 24px rgba(0,0,0,.35);transform:translateY(-2px);opacity:1}
+.pc .pt{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:8px}
+.pc h3{font-family:var(--serif);font-size:1.02rem;font-weight:500;line-height:1.3;margin-bottom:8px}
+.pc .pd{font-size:13px;line-height:1.6;color:var(--t2);font-weight:300;flex-grow:1;margin-bottom:14px}
+.pc .pf{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--border)}
+.pf .co{font-size:11.5px;color:var(--t3);font-weight:500}
+.pf .gl{font-size:11.5px;color:var(--accent);font-weight:500}
+.pc7{grid-column:1/-1;max-width:calc(50% - 7px);justify-self:center}
+
+/* Experience */
+.el{display:flex;flex-direction:column}
+.er{display:grid;grid-template-columns:200px 1fr;gap:40px;padding:clamp(28px,4vw,40px) 0;border-bottom:1px solid var(--border)}
+.er:first-child{padding-top:0}.er:last-child{border-bottom:none;padding-bottom:0}
+.er-l{display:flex;flex-direction:column;gap:5px}
+.logo-link{display:inline-flex;align-items:center;gap:10px;margin-bottom:2px;transition:opacity var(--ease)}
+.logo-link:hover{opacity:.7}
+.logo-link img{height:18px;width:auto;object-fit:contain;opacity:.65;filter:brightness(1.8) grayscale(.25);transition:opacity var(--ease)}
+.logo-link:hover img{opacity:.85}
+.er-co{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--t1)}
+.er-role{font-size:12.5px;font-weight:500;color:var(--t2)}
+.er-per{font-size:11.5px;color:var(--t3)}
+.eb{list-style:none;padding:0}
+.eb li{font-size:13px;line-height:1.6;color:var(--t2);font-weight:300;padding:3px 0 3px 14px;position:relative}
+.eb li::before{content:'';position:absolute;left:0;top:11px;width:3px;height:3px;border-radius:50%;background:var(--t3)}
+
+/* Education */
+.edu-link{display:inline-flex;align-items:center;gap:14px;transition:opacity var(--ease)}
+.edu-link:hover{opacity:.75}
+.edu-link img{height:40px;width:auto;object-fit:contain;opacity:.75;filter:brightness(1.3)}
+.edu-link:hover img{opacity:.9}
+.edu-t h3{font-family:var(--serif);font-size:1rem;font-weight:500}
+.edu-t .ed{font-size:13px;color:var(--t2);font-weight:300}
+.edu-t .ey{font-size:11.5px;color:var(--t3)}
+
+/* Skills */
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:28px 44px}
+.sk h4{font-size:10px;text-transform:uppercase;letter-spacing:.11em;color:var(--t3);font-weight:600;margin-bottom:10px}
+.sp{display:flex;flex-wrap:wrap;gap:6px}
+.sp span{padding:4px 12px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--pill);font-size:12px;color:var(--t2);font-weight:400}
+
+/* Footer */
+footer{padding:40px 0;border-top:1px solid var(--border);text-align:center}
+footer p{font-size:11.5px;color:var(--t3);line-height:2}
+footer a{color:var(--t2)}footer a:hover{color:var(--accent)}
+
+/* Responsive */
+@media(max-width:680px){
+  .pg{grid-template-columns:1fr}
+  .pc7{max-width:100%!important}
+  .er{grid-template-columns:1fr;gap:10px}
+  .sg{grid-template-columns:1fr;gap:20px}
+}
+
+@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div class="w">
+
+<!-- Hero -->
+<div class="hero">
+  <h1>Sharjeel Jalil Albasit</h1>
+  <p class="intro">I build data products for pricing, prediction, and operational decision-making.</p>
+  <nav class="hero-nav">
+    <a href="https://github.com/SharjeelJalil" class="nf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+    <a href="https://linkedin.com/in/sharjeeljalil" class="ng" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+    <a href="mailto:sharjeel_95@hotmail.com" class="ng"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>Email</a>
+    <a href="SharjeelJalil_Resume.pdf" class="ng"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>Resume</a>
+  </nav>
+</div>
+
+<!-- Projects -->
+<div class="s">
+  <div class="s-label">Selected Projects</div>
+  <div class="pg">
+
+    <a class="pc" href="https://github.com/SharjeelJalil/eta-prediction-model" target="_blank" rel="noopener">
+      <div class="pt">Delivery Logistics</div>
+      <h3>ETA Prediction Model</h3>
+      <p class="pd">5-stage segmented ETA with hierarchical Bayesian smoothing, OSRM calibration, and recency-weighted medians. Validated on 137K orders, MAE 8.49 minutes.</p>
+      <div class="pf"><span class="co">Mrsool</span><span class="gl">View on GitHub</span></div>
+    </a>
+
+    <a class="pc" href="https://github.com/SharjeelJalil/credit-risk-scoring-engine" target="_blank" rel="noopener">
+      <div class="pt">Banking</div>
+      <h3>Credit Risk Scoring and Limit Engine</h3>
+      <p class="pd">MLP neural network scoring 891K bank customers with 5-tier risk categorization, proxy income estimation, and credit limit determination.</p>
+      <div class="pf"><span class="co">Bank Alfalah</span><span class="gl">View on GitHub</span></div>
+    </a>
+
+    <a class="pc" href="https://github.com/SharjeelJalil/demand-control-system" target="_blank" rel="noopener">
+      <div class="pt">Marketplace Ops</div>
+      <h3>Demand Control System</h3>
+      <p class="pd">Zone-level stress management with progressive search/listing radius shrink, Butler shutdown, and customer-facing delivery Choice tiers.</p>
+      <div class="pf"><span class="co">Mrsool</span><span class="gl">View on GitHub</span></div>
+    </a>
+
+    <a class="pc" href="https://github.com/SharjeelJalil/courier-shift-optimization" target="_blank" rel="noopener">
+      <div class="pt">Operations Research</div>
+      <h3>Courier Shift Optimization</h3>
+      <p class="pd">Demand-aligned shift scheduling replacing fixed templates. Median demand forecasting, greedy selection, dispatch simulation. Utilization 0.8 to 1.1 orders/hour.</p>
+      <div class="pf"><span class="co">Mrsool</span><span class="gl">View on GitHub</span></div>
+    </a>
+
+    <a class="pc" href="https://github.com/SharjeelJalil/vendor-churn-prevention" target="_blank" rel="noopener">
+      <div class="pt">Q-Commerce</div>
+      <h3>Vendor Churn Prevention Engine</h3>
+      <p class="pd">Predicts which restaurants will go inactive using operational KPIs. Intervention on flagged vendors reduced churn by roughly 62% across 17K vendors.</p>
+      <div class="pf"><span class="co">Foodpanda</span><span class="gl">View on GitHub</span></div>
+    </a>
+
+    <a class="pc" href="https://github.com/SharjeelJalil/customer-pricing-intelligence" target="_blank" rel="noopener">
+      <div class="pt">Pricing / Geospatial</div>
+      <h3>Customer Pricing Intelligence</h3>
+      <p class="pd">Infers customer personas from trip geography using OpenStreetMap, then predicts willingness-to-pay. Outputs pricing multipliers from 1.00x to 1.15x.</p>
+      <div class="pf"><span class="co">Bykea</span><span class="gl">View on GitHub</span></div>
+    </a>
+
+    <a class="pc pc7" href="https://github.com/SharjeelJalil/smart-ride-assignment" target="_blank" rel="noopener">
+      <div class="pt">Mobility</div>
+      <h3>Smart Ride Assignment Engine</h3>
+      <p class="pd">Ride acceptance prediction replacing nearest-driver dispatch with ML-driven ranking using driver behavioral odds, route patterns, and geometric features.</p>
+      <div class="pf"><span class="co">Bykea</span><span class="gl">View on GitHub</span></div>
+    </a>
+
+  </div>
+</div>
+
+<!-- Experience -->
+<div class="s">
+  <div class="s-label">Experience</div>
+  <div class="el">
+
+    <div class="er">
+      <div class="er-l">
+        <a class="logo-link" href="https://mrsool.co" target="_blank" rel="noopener">
+          <img src="assets/logos/mrsool.png" alt="Mrsool">
+          <span class="er-co">Mrsool</span>
+        </a>
+        <div class="er-role">Senior Performance Analyst</div>
+        <div class="er-per">Mar 2024 / Jan 2026</div>
+      </div>
+      <ul class="eb">
+        <li>Developed a food prep time prediction model with 85% offline accuracy for dispatching decisions</li>
+        <li>Customer segmentation and contextual campaign design that lifted conversion by 5%</li>
+        <li>Shift optimization model that increased courier utilization from 0.8 to 1.1 orders per active hour</li>
+        <li>Stress control system adjusting search radius, delivery distance, and markup tiers during peaks</li>
+      </ul>
+    </div>
+
+    <div class="er">
+      <div class="er-l">
+        <a class="logo-link" href="https://www.careem.com" target="_blank" rel="noopener">
+          <img src="assets/logos/careem.png" alt="Careem">
+          <span class="er-co">Careem</span>
+        </a>
+        <div class="er-role">Senior Data Analyst</div>
+        <div class="er-per">Jun 2023 / Mar 2024</div>
+      </div>
+      <ul class="eb">
+        <li>Data-driven device allocation strategy that improved merchant rescue rate by 42% in Dubai and Jeddah</li>
+        <li>Automated 30+ finance reports, cutting payout reconciliation time by 25%</li>
+        <li>Fixed gaps in A/B testing framework including KPI significance and guardrail checks</li>
+        <li>Product event instrumentation for full funnel visibility, improving final-stage conversion by 10%</li>
+      </ul>
+    </div>
+
+    <div class="er">
+      <div class="er-l">
+        <a class="logo-link" href="https://bykea.com" target="_blank" rel="noopener">
+          <img src="assets/logos/bykea.png" alt="Bykea">
+          <span class="er-co">Bykea</span>
+        </a>
+        <div class="er-role">Manager, Marketing Analytics</div>
+        <div class="er-per">Mar 2022 / Apr 2023</div>
+      </div>
+      <ul class="eb">
+        <li>Lifted marketing campaign conversion from 2% to 15% with lifecycle-based targeting</li>
+        <li>ML models for power user prediction, increasing average daily bike taxi trips by 13%</li>
+        <li>Smart matchmaking algorithm that cut ride acceptance time by 5 minutes</li>
+        <li>Dynamic surge pricing engine that increased processing commission by 5% within 2 weeks</li>
+      </ul>
+    </div>
+
+    <div class="er">
+      <div class="er-l">
+        <a class="logo-link" href="https://www.foodpanda.com" target="_blank" rel="noopener">
+          <img src="assets/logos/foodpanda.png" alt="Foodpanda">
+          <span class="er-co">Foodpanda</span>
+        </a>
+        <div class="er-role">Performance Analyst</div>
+        <div class="er-per">Apr 2021 / Mar 2022</div>
+      </div>
+      <ul class="eb">
+        <li>Reduced vendor churn by 62% with a prediction model that flagged high-risk partners for intervention</li>
+        <li>Improved Vendor NPS by converting 18% of detractors to promoters</li>
+        <li>Managed restaurant closures and supply constraints across 92 zones</li>
+        <li>Daily order forecasts and refined penalty rules, cutting order fail rate by 7%</li>
+      </ul>
+    </div>
+
+    <div class="er">
+      <div class="er-l">
+        <a class="logo-link" href="https://www.bankalfalah.com" target="_blank" rel="noopener">
+          <img src="assets/logos/bankalfalah.png" alt="Bank Alfalah">
+          <span class="er-co">Bank Alfalah</span>
+        </a>
+        <div class="er-role">Asst. Manager, Data Science</div>
+        <div class="er-per">Jun 2018 / Apr 2021</div>
+      </div>
+      <ul class="eb">
+        <li>Mobilized PKR 1B in deposits from 4K customers in 3 weeks using deposit RFM analysis</li>
+        <li>Reduced credit card attrition by 23% in under 4 months with predictive churn modeling</li>
+        <li>Predicted and reactivated 50K+ dormant and at-risk deposit accounts</li>
+        <li>Default prediction model assessing 1M customers for digital loans at 78% accuracy</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Education -->
+<div class="s">
+  <div class="s-label">Education</div>
+  <a class="edu-link" href="https://www.iba.edu.pk" target="_blank" rel="noopener">
+    <img src="assets/logos/iba.png" alt="IBA Karachi">
+    <div class="edu-t">
+      <h3>Institute of Business Administration, Karachi</h3>
+      <div class="ed">Bachelor of Science in Computer Science</div>
+      <div class="ey">2014 / 2018</div>
+    </div>
+  </a>
+</div>
+
+<!-- Skills -->
+<div class="s">
+  <div class="s-label">Tools and Skills</div>
+  <div class="sg">
+    <div class="sk"><h4>Languages and Libraries</h4><div class="sp"><span>Python</span><span>SQL</span><span>R</span><span>Scikit-learn</span><span>Statsmodels</span><span>GeoPandas</span><span>OSRM</span><span>H3</span><span>SimPy</span><span>OSMnx</span><span>BigQuery</span></div></div>
+    <div class="sk"><h4>Visualization</h4><div class="sp"><span>Power BI</span><span>Tableau</span><span>Metabase</span><span>Looker Studio</span><span>Matplotlib</span></div></div>
+    <div class="sk"><h4>Analytics</h4><div class="sp"><span>A/B Testing</span><span>Funnel Analysis</span><span>Cohort Analysis</span><span>KPI Design</span><span>Experimentation</span></div></div>
+    <div class="sk"><h4>Domain Expertise</h4><div class="sp"><span>Marketplace Operations</span><span>Dynamic Pricing</span><span>Shift Planning</span><span>Credit Risk</span><span>Geo-Analytics</span><span>Lifecycle Marketing</span></div></div>
+  </div>
+</div>
+
+</div>
+
+<footer><div class="w"><p>Sharjeel Jalil Albasit<br><a href="mailto:sharjeel_95@hotmail.com">sharjeel_95@hotmail.com</a><br><a href="https://github.com/SharjeelJalil" target="_blank">GitHub</a> &nbsp;/&nbsp; <a href="https://linkedin.com/in/sharjeeljalil" target="_blank">LinkedIn</a></p></div></footer>
+
+</body>
+</html>
