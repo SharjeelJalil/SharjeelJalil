@@ -2,7 +2,7 @@
 
 Senior Data Analyst with 8 years of experience building ML systems, marketplace optimization tools, and decision engines across banking, food delivery, ride-hailing, and Q-commerce.
 
-Most of my work has been about taking messy operational problems and turning them into systems that actually run in production. ETA prediction for 137K daily orders, credit risk scoring for 891K bank customers, real-time stress management for delivery marketplaces, shift planning, pricing, churn prevention. The projects below are the ones I can share publicly.
+Most of my work has been about taking messy operational problems and turning them into systems that are production ready. ETA prediction for 137K daily orders, credit risk scoring for 891K bank customers, real-time stress management for delivery marketplaces, shift planning, pricing, churn prevention. The projects below are the ones I can share publicly.
 
 ### What's in this portfolio
 
